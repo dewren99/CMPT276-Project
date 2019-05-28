@@ -1,6 +1,6 @@
 # CMPT276-Project
 
-### Members
+## Members
 - Nadia Hazar (301341589)
 - Justin Woo (301301003)
 - Deniz Evrendilek (301340591)
