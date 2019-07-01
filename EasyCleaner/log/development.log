@@ -2942,3 +2942,1471 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 8577)
 
 
+Started GET "/" for ::1 at 2019-06-29 18:25:30 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AdminController#index as HTML
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 1996)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/application_controller.rb:5:in `authorize'
+Started GET "/" for ::1 at 2019-06-29 18:25:36 -0700
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms | Allocations: 1804)
+
+
+Started GET "/login" for ::1 at 2019-06-29 18:25:36 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1085)
+Completed 200 OK in 1032ms (Views: 1031.4ms | ActiveRecord: 0.0ms | Allocations: 1446068)
+
+
+Started GET "/login" for ::1 at 2019-06-29 18:25:39 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 318)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 8573)
+
+
+Started POST "/login" for ::1 at 2019-06-29 18:25:42 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"oaddT9w1LJ0ZFgxrvalP2mOBOHriW8pRkCXNiX1dRRptna7sUknk53unHmdFPtjEjCU68nrv5ioaPqL/fEdTfw==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1134)
+
+
+Started GET "/login" for ::1 at 2019-06-29 18:25:42 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 311)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 8574)
+
+
+Started GET "/login" for ::1 at 2019-06-29 18:25:44 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 310)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 8565)
+
+
+Started POST "/login" for ::1 at 2019-06-29 18:25:47 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"/wHw1cdbTbMt1INOLsJq5Ch+hDufE+4H7juZkpVvh5UzOwN2SSeFyU9lkULWVf36x9qGswenwnxkIPbklHWR8A==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 936)
+
+
+Started GET "/login" for ::1 at 2019-06-29 18:25:47 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 313)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms | Allocations: 8584)
+
+
+Started GET "/users" for ::1 at 2019-06-29 23:16:32 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2017)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/application_controller.rb:5:in `authorize'
+Started GET "/profile" for ::1 at 2019-06-29 23:16:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/profile"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/profile" for ::1 at 2019-06-29 23:17:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/profile"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/profile" for ::1 at 2019-06-29 23:17:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/profile"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-06-29 23:17:15 -0700
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms | Allocations: 1947)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:17:15 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1084)
+Completed 200 OK in 1044ms (Views: 1042.3ms | ActiveRecord: 0.0ms | Allocations: 1454344)
+
+
+Started POST "/login" for ::1 at 2019-06-29 23:17:18 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"FQoRuE3fv0Cw61cQMKunyZj9sFB/2K2fqQ+hephuEcHEsj0HdnI3PdaAhnLmA5wDLQpT78NRMrufbziqMaGLjQ==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1097)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:17:18 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 320)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 9462)
+
+
+Started POST "/login" for ::1 at 2019-06-29 23:17:19 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"1aH59PqAQhZeq6IHvaw5fuu17QAk4wFrNAAN8aa4J2EEGdVLwS3KazjAc2VrBAK0XkIOv5hqnk8CYJQhD3e9LQ==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 930)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:17:19 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 312)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 9408)
+
+
+Started POST "/login" for ::1 at 2019-06-29 23:17:19 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"+aYuV76RD/lIbb/fzcbBQNd8FC8xWbOTFqQlr2Kj4C4oHgLohTyHhC4Gbr0bbvqKYov3kI3QLLcgxLx/y2x6Yg==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 939)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:17:19 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 313)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 9407)
+
+
+Started POST "/login" for ::1 at 2019-06-29 23:17:20 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"sKj/HSdfDBCkyQahC11e3+FdTDXyuPS4p4J6wDLvHMxhENOiHPKEbcKi18Pd9WUVVKqvik4xa5yR4uMQmyCGgA==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 943)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:17:20 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 312)
+Completed 200 OK in 33ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 9409)
+
+
+Started GET "/users" for ::1 at 2019-06-29 23:17:25 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1075)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:17:25 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 311)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 9399)
+
+
+Started GET "/users/new" for ::1 at 2019-06-29 23:17:33 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1062)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:17:33 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 311)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 9402)
+
+
+Started GET "/users/new" for ::1 at 2019-06-29 23:17:39 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1066)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:17:39 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 311)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 9406)
+
+
+Started GET "/profile" for ::1 at 2019-06-29 23:17:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/profile"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/pages" for ::1 at 2019-06-29 23:18:27 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/pages"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/pages/profile" for ::1 at 2019-06-29 23:18:33 -0700
+Processing by PagesController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1064)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:18:33 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 311)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 9417)
+
+
+Started POST "/login" for ::1 at 2019-06-29 23:18:36 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"KABiqTCjUfDhzJL1O0GfdA0x5z5OoistYE5uOOGhW7b5uE4WCw7ZjYenQ5ft6aS+uMYEgfIrtAlWLvfoSG7B+g==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 926)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:18:36 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 311)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 9404)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:19:40 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 734)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 9962)
+
+
+Started GET "/views/admi" for ::1 at 2019-06-29 23:19:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/views/admi"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/views/admin" for ::1 at 2019-06-29 23:20:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/views/admin"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/pages/home" for ::1 at 2019-06-29 23:21:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/pages/home"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/pages/home" for ::1 at 2019-06-29 23:24:31 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/pages/home"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/pages/profile" for ::1 at 2019-06-29 23:24:37 -0700
+Processing by PagesController#profile as HTML
+  Rendering pages/profile.html.erb within layouts/application
+  Rendered pages/profile.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 9792)
+
+
+Started GET "/users/new" for ::1 at 2019-06-29 23:24:43 -0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1979)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:17:in `new'
+Started GET "/users/new" for ::1 at 2019-06-29 23:25:08 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.7ms | Allocations: 2903)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 3249)
+Completed 200 OK in 26ms (Views: 18.9ms | ActiveRecord: 0.6ms | Allocations: 16685)
+
+
+Started POST "/users" for ::1 at 2019-06-29 23:25:15 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"9305Vv0xY6BIXMNjwsmokxP4xmRU6iP1S7hiFTGOMOAmxRXpxpzr3S43EgEUYZNZpg8l2+hjvNF92PvFmEGqrA==", "user"=>{"name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1237)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.):
+  
+app/controllers/users_controller.rb:27:in `create'
+Started POST "/users" for ::1 at 2019-06-29 23:26:38 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"9305Vv0xY6BIXMNjwsmokxP4xmRU6iP1S7hiFTGOMOAmxRXpxpzr3S43EgEUYZNZpg8l2+hjvNF92PvFmEGqrA==", "user"=>{"name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 221ms (ActiveRecord: 0.0ms | Allocations: 99505)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x00007fcf1908c3f8>
+Did you mean?  super):
+  
+app/controllers/users_controller.rb:27:in `create'
+Started POST "/users" for ::1 at 2019-06-29 23:26:54 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"9305Vv0xY6BIXMNjwsmokxP4xmRU6iP1S7hiFTGOMOAmxRXpxpzr3S43EgEUYZNZpg8l2+hjvNF92PvFmEGqrA==", "user"=>{"name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms | Allocations: 4837)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.):
+  
+app/controllers/users_controller.rb:27:in `create'
+Started GET "/users/new" for ::1 at 2019-06-29 23:28:08 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1909)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:17:in `new'
+Started GET "/" for ::1 at 2019-06-29 23:31:22 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  Rendered admin/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 343)
+Completed 200 OK in 1125ms (Views: 1104.1ms | ActiveRecord: 0.0ms | Allocations: 1447439)
+
+
+Started GET "/users" for ::1 at 2019-06-29 23:31:29 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1360)
+Completed 200 OK in 20ms (Views: 16.1ms | ActiveRecord: 0.6ms | Allocations: 11598)
+
+
+Started GET "/users/new" for ::1 at 2019-06-29 23:31:30 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.7ms | Allocations: 2964)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 3316)
+Completed 200 OK in 27ms (Views: 18.6ms | ActiveRecord: 0.6ms | Allocations: 15614)
+
+
+Started POST "/users" for ::1 at 2019-06-29 23:31:36 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"dqlwGgMFNRh5o2wNK1PXTRbduD4I7kPENuDSIQ5vGCk75PZpHQfVPFueJF0f0itTd+xtGuJWG8neEr4dXozprQ==", "user"=>{"name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.6ms | Allocations: 1084)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1170)
+Completed 200 OK in 244ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 11814)
+
+
+Started POST "/users" for ::1 at 2019-06-29 23:31:42 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"iWBu8J4AGNdx2brqL9TI1ySi6UefIzkegTLczXBqCKpY2EJPpa2Qqheya4j5fPMdkVUK+COqpjq3UkUd2aWS5g==", "user"=>{"name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `block in create'
+  [1m[36mUser Create (6.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Deniz Evrendilek"], ["password_digest", "$2a$12$TnL7v9k6LcAAyuYDttoAj.ncdUnbzEhx4pkbMycfeiK.gflxApMXq"], ["created_at", "2019-06-30 06:31:42.838847"], ["updated_at", "2019-06-30 06:31:42.838847"]]
+  ↳ app/controllers/users_controller.rb:30:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 246ms (ActiveRecord: 7.3ms | Allocations: 3042)
+
+
+Started GET "/users" for ::1 at 2019-06-29 23:31:42 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 846)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 9953)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:31:50 -0700
+  
+ArgumentError (Before process_action callback :authorize has not been defined):
+  
+app/controllers/sessions_controller.rb:3:in `<class:SessionsController>'
+app/controllers/sessions_controller.rb:1:in `<main>'
+Started GET "/login" for ::1 at 2019-06-29 23:32:43 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1060)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 10730)
+
+
+Started POST "/login" for ::1 at 2019-06-29 23:32:45 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"rA5dKIVkC01HHN1FkrJzgA16OfFWF1Xvwbdf+39iRhh9tnGXvsmDMCF3DCdEGkhKuI3aTuqeysv318Yr1q3cVA==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 249ms (ActiveRecord: 0.8ms | Allocations: 5259)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:32:45 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 312)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 9417)
+
+
+Started POST "/login" for ::1 at 2019-06-29 23:32:47 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"SBG+ErbK6OFjD9owVpcS6OtLRrCpC131NzHsoIM0g5+ZqZKtjWdgnAVkC1KAPykiXrylDxWCwtEBUXVwKvsZ0w==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 234ms (ActiveRecord: 0.1ms | Allocations: 982)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:32:47 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 313)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 9415)
+
+
+Started GET "/users" for ::1 at 2019-06-29 23:32:53 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1174)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:32:53 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 312)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 9408)
+
+
+Started GET "/users/new" for ::1 at 2019-06-29 23:32:59 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1061)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:32:59 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 312)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 9412)
+
+
+Started GET "/pages/profile" for ::1 at 2019-06-29 23:33:05 -0700
+Processing by PagesController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1125)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:33:05 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 311)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 9411)
+
+
+Started POST "/login" for ::1 at 2019-06-29 23:33:07 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"RezbdGIBkKh1OCEYRVc5onNBn+mvEaTNfy2dC3LIQ4eUVPfLWawY1RNT8HqT/wJoxrZ8VhOYO+lJTQTb2wfZyw==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 235ms (ActiveRecord: 0.1ms | Allocations: 972)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:33:07 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 311)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 9412)
+
+
+Started POST "/login" for ::1 at 2019-06-29 23:33:14 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"mv6LVhmfsNOfJcujuhOloNbdOOoQWWbawOlG4eNk6PNLRqfpIjI4rvlOGsFsu55qYyrbVazQ+f72id8xSqtyvw==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 433ms (ActiveRecord: 0.2ms | Allocations: 100002)
+
+
+  
+NameError (undefined local variable or method `sessions' for #<SessionsController:0x00007f9b6993a420>
+Did you mean?  session):
+  
+app/controllers/sessions_controller.rb:10:in `create'
+Started GET "/login" for ::1 at 2019-06-29 23:33:56 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 734)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 9967)
+
+
+Started POST "/login" for ::1 at 2019-06-29 23:34:01 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"EMrYZY4E1wwHzVf+ydqF9nVOpJaWA2uoLd3PhcwugPfBcvTatalfcWGmhpwfcr48wLlHKSqK9IwbvVZVZeEauw==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 400ms (ActiveRecord: 0.6ms | Allocations: 103887)
+
+
+  
+NameError (undefined local variable or method `sessions' for #<SessionsController:0x00007f9b60ea6980>
+Did you mean?  session):
+  
+app/controllers/sessions_controller.rb:10:in `create'
+Started POST "/login" for ::1 at 2019-06-29 23:34:10 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"EMrYZY4E1wwHzVf+ydqF9nVOpJaWA2uoLd3PhcwugPfBcvTatalfcWGmhpwfcr48wLlHKSqK9IwbvVZVZeEauw==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 237ms (ActiveRecord: 1.0ms | Allocations: 4954)
+
+
+Started GET "/admin" for ::1 at 2019-06-29 23:34:11 -0700
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+  Rendering admin/index.html.erb within layouts/application
+  Rendered admin/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 10033)
+
+
+Started GET "/login" for ::1 at 2019-06-29 23:34:18 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 733)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 9977)
+
+
+Started POST "/login" for ::1 at 2019-06-29 23:34:22 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"vv7GSBMy9J6eSmEfKCDyd6fRQDfmCT3Wc+EvboJC+HlvRur3KJ984/ghsH3+iMm9EiajiFqAovJFgba+K41iNQ==", "name"=>"Deniz Evrendilek", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Deniz Evrendilek"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 231ms (ActiveRecord: 0.1ms | Allocations: 957)
+
+
+Started GET "/admin" for ::1 at 2019-06-29 23:34:22 -0700
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+  Rendering admin/index.html.erb within layouts/application
+  Rendered admin/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.1ms | Allocations: 9662)
+
+
+Started GET "/users" for ::1 at 2019-06-29 23:34:28 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 906)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.4ms | Allocations: 10663)
+
+
+Started GET "/users/new" for ::1 at 2019-06-29 23:34:30 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.2ms | Allocations: 924)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1009)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.2ms | Allocations: 10689)
+
+
+Started GET "/" for ::1 at 2019-06-29 23:34:35 -0700
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+  Rendering admin/index.html.erb within layouts/application
+  Rendered admin/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 9668)
+
+
+Started GET "/profile" for ::1 at 2019-06-29 23:34:37 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/profile"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/pages/profile" for ::1 at 2019-06-29 23:34:45 -0700
+Processing by PagesController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+  Rendering pages/profile.html.erb within layouts/application
+  Rendered pages/profile.html.erb within layouts/application (Duration: 0.4ms | Allocations: 90)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 10343)
+
+
+Started GET "/users" for ::1 at 2019-06-29 23:36:36 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 832)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.3ms | Allocations: 10515)
+
+
+Started GET "/users/new" for ::1 at 2019-06-29 23:36:43 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.2ms | Allocations: 908)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 993)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.1ms | Allocations: 10672)
+
+
+Started POST "/users" for ::1 at 2019-06-29 23:36:52 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Y2KapcdBHzzuYzs5jLb+/abPUEmKL/ky1xS06X2DyO4uLxzW2UP/GMxec2m4NwLjx/6FbWCXoT8/5tjVLWA5ag==", "user"=>{"name"=>"admin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `block in create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "admin"], ["password_digest", "$2a$12$musHIiNMf4yQu18.s/ez/.YIHNLE8DLvD1bfkaAmd5gwMMrsZXbny"], ["created_at", "2019-06-30 06:36:52.562727"], ["updated_at", "2019-06-30 06:36:52.562727"]]
+  ↳ app/controllers/users_controller.rb:30:in `block in create'
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 246ms (ActiveRecord: 6.5ms | Allocations: 3623)
+
+
+Started GET "/users" for ::1 at 2019-06-29 23:36:52 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 943)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 10632)
+
+
+Started GET "/" for ::1 at 2019-06-30 18:10:52 -0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `authorize'
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 15ms (ActiveRecord: 1.1ms | Allocations: 2772)
+
+
+Started GET "/login" for ::1 at 2019-06-30 18:10:53 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1203)
+Completed 200 OK in 1232ms (Views: 1228.9ms | ActiveRecord: 0.0ms | Allocations: 1461063)
+
+

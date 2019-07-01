@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'pages/profile'
   #get 'admin/index'
   #get 'sessions/new'
   get 'sessions/create'
