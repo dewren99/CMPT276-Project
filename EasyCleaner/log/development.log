@@ -4971,3 +4971,200 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 1419ms (Views: 1413.2ms | ActiveRecord: 0.0ms | Allocations: 1466384)
 
 
+Started GET "/login" for ::1 at 2019-07-02 14:05:41 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 309)
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.0ms | Allocations: 13506)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:05:43 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 310)
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.0ms | Allocations: 13512)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:07:29 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 621)
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 125)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.0ms | Allocations: 15075)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:08:20 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 616)
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 125)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 15079)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:08:24 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 318)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms | Allocations: 13521)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:08:25 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 310)
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.0ms | Allocations: 13513)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:08:54 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 616)
+  Rendered layouts/_navigation.html.erb (Duration: 1.1ms | Allocations: 118)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms | Allocations: 15055)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:08:56 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 318)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 13525)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:09:01 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 616)
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 117)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 15052)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:09:14 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 616)
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 117)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms | Allocations: 15048)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:09:14 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 318)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 47ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 13533)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:09:24 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 309)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 13514)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:12:37 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 309)
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms | Allocations: 13512)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:12:52 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 621)
+  Rendered layouts/_navigation.html.erb (Duration: 1.7ms | Allocations: 118)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 15060)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:13:13 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 616)
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 115)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 15048)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:17:01 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ArgumentError (Before process_action callback :authorize has not been defined):
+  
+app/controllers/sessions_controller.rb:3:in `<class:SessionsController>'
+app/controllers/sessions_controller.rb:1:in `<main>'
+Started GET "/login" for ::1 at 2019-07-02 14:17:22 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ArgumentError (Before process_action callback :authorize has not been defined):
+  
+app/controllers/sessions_controller.rb:3:in `<class:SessionsController>'
+app/controllers/sessions_controller.rb:1:in `<main>'
+Started GET "/login" for ::1 at 2019-07-02 14:17:33 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ArgumentError (Before process_action callback :authorize has not been defined):
+  
+app/controllers/sessions_controller.rb:3:in `<class:SessionsController>'
+app/controllers/sessions_controller.rb:1:in `<main>'
+Started GET "/login" for ::1 at 2019-07-02 14:17:48 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ArgumentError (Before process_action callback :authorize has not been defined):
+  
+app/controllers/sessions_controller.rb:3:in `<class:SessionsController>'
+app/controllers/sessions_controller.rb:1:in `<main>'
+Started GET "/login" for ::1 at 2019-07-02 14:18:09 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 734)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms | Allocations: 14161)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:18:12 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 309)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms | Allocations: 13506)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:19:04 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 616)
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 118)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 15059)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:19:43 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 616)
+  Rendered layouts/_navigation.html.erb (Duration: 3.2ms | Allocations: 117)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.0ms | Allocations: 15056)
+
+
+Started GET "/login" for ::1 at 2019-07-02 14:20:27 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 616)
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 106)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms | Allocations: 15044)
+
+
+Started GET "/" for ::1 at 2019-07-02 14:20:37 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  Rendered admin/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 82)
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.0ms | Allocations: 13753)
+
+
