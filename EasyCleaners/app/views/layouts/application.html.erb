@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Easy Cleaners</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>WELCOME TO EASY CLEANERS</h1>
+    <div class="container">
+      <%= render 'layouts/header' %>
+      <%= render 'layouts/flash' %>
+      <%= yield %>
+    </div>
+
+  </body>
+</html>
