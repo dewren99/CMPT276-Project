@@ -8,7 +8,9 @@
 
 
 gem install rials
+
 bundle install
+
 yarn install --check-files
 
 rails s
