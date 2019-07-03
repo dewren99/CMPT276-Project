@@ -7,6 +7,8 @@
 - Jinwook Kim (301288206)
 
 
+Run the following commands on terminal to get started!
+
 gem install rials
 
 bundle install
