@@ -16,12 +16,9 @@
 
 @import "bootstrap";
 
-.body{
-  // background-color: ;
-}
 
 .bg-image{
- background-image: url(easycleaners_bg);
+ background-image: url(image-path('easycleaners_bg.jpg'));
  background-repeat: no-repeat;
  background-size: cover;
  -webkit-filter: blur(5px);
