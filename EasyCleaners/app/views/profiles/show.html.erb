@@ -4,8 +4,24 @@
 </div>
 
 <dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:info) %>:</strong></dt>
-  <dd><%= @profile.info %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:first_name) %>:</strong></dt>
+  <dd><%= @profile.first_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:last_name) %>:</strong></dt>
+  <dd><%= @profile.last_name %></dd>
+
+  <dt><strong><%= model_class.human_attribute_name(:burnaby) %>:</strong></dt>
+  <dd><%= @profile.burnaby %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:richmond) %>:</strong></dt>
+  <dd><%= @profile.richmond %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:north_vancouver) %>:</strong></dt>
+  <dd><%= @profile.north_vancouver %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:west_vancouver) %>:</strong></dt>
+  <dd><%= @profile.west_vancouver %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:yale_town) %>:</strong></dt>
+  <dd><%= @profile.yale_town %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:gas_town) %>:</strong></dt>
+  <dd><%= @profile.gas_town %></dd>
+
   <dt><strong><%= model_class.human_attribute_name(:price) %>:</strong></dt>
   <dd><%= @profile.price %></dd>
 </dl>

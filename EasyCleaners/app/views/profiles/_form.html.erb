@@ -1,45 +1,91 @@
-<form>
-  <div class="form-group">
-    <label for="Name">First Name</label>
-    <input type="name" class="form-control" id="Name" >
-  </div>
-  <div class="form-group">
-    <label for="Last Name">Last Name</label>
-    <input type="name" class="form-control" id="Last Name" >
-  </div>
+<%= form_for @profile, :html => { :class => "form-horizontal profile" } do |f| %>
 
-  <!--<div class="dropdown">
-    <label class="dropbtn">City</label>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#">Vancouver </a>
-      <br> <a href="#">Burnaby </a>
-      <br> <a href="#">Richmond </a>
-      <br> <a href="#">North Vancouver </a>
-      <br> <a href="#">West Vancouver </a>
-      <br> <a href="#">Yale Town </a>
-      <br> <a href="#">Gas Town </a>
+<% if @profile.errors.any? %>
+  <div id="error_expl" class="panel panel-danger">
+    <div class="panel-heading">
+      <h3 class="panel-title"><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h3>
     </div>
-  </div> -->
+    <div class="panel-body">
+      <ul>
+      <% @profile.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
 
-  
-  <label for="city">City</label>
+<!-- <form> -->
+  <div class="form-group">
+    <%= f.label :first_name, :class => 'control-label' %>
+    <%= f.text_field :first_name, :class => 'form-control' %>
+    <!-- <label for="Name">First Name</label> -->
+    <!-- <input type="name" class="form-control" id="Name" > -->
+  </div>
+
+  <div class="form-group">
+    <%= f.label :last_name, :class => 'control-label' %>
+    <%= f.text_field :last_name, :class => 'form-control' %>
+    <!-- <label for="Last Name">Last Name</label> -->
+    <!-- <input type="name" class="form-control" id="Last Name" > -->
+  </div>
+
+
+
+  <div class="form-group">
+    <%= check_box_tag 'burnaby', 'burnaby', false %>
+    <%= label_tag 'burnaby', 'Burnaby' %>
+<br>
+<%= check_box_tag 'richmond', true, false %>
+    <%= label_tag 'richmond', 'Richmond' %>
+<br>
+<%= check_box_tag 'north_vancouver', true, false %>
+    <%= label_tag 'north_vancouver', 'North Vancouver' %>
+<br>
+<%= check_box_tag 'west_vancouver', true, false %>
+    <%= label_tag 'west_vancouver', 'West Vancouver' %>
+<br>
+<%= check_box_tag 'yale_town', true, false %>
+    <%= label_tag 'yale_town', 'yale_town' %>
+<br>
+<%= check_box_tag 'gas_town', true, false %>
+    <%= label_tag 'gas_town', 'gas_town' %>
+  </div>
+
+  <!-- <label for="city">City</label>
   <div>
   <form action="/action_page.php">
   <input type="checkbox" name="city1" value="Burnaby"> Burnaby<br>
   <input type="checkbox" name="city2" value="Richmond"> Richmond<br>
-   <input type="checkbox" name="city3" value="North Vancouver"> North Vancouver<br>
-    <input type="checkbox" name="city4" value="West Vancouver"> West Vancouver<br>
-     <input type="checkbox" name="city5" value="Yale Town"> Yale Town<br>
-      <input type="checkbox" name="city6" value="Gas Town"> Gas Town<br>
+  <input type="checkbox" name="city3" value="North Vancouver"> North Vancouver<br>
+  <input type="checkbox" name="city4" value="West Vancouver"> West Vancouver<br>
+  <input type="checkbox" name="city5" value="Yale Town"> Yale Town<br>
+  <input type="checkbox" name="city6" value="Gas Town"> Gas Town<br>
 </form>
-</div>
+</div> -->
 
 <br>
 
+
+
+<div class="form-group">
+  <%= f.label :price, :class => 'control-label' %>
+    <%= f.text_field :price, :class => 'form-control' %>
+</div>
+   <!-- <div class="form-group">
+    <label for="Price">Price</label>
+    <input type="Price" class="form-control" id="Price" >
+  </div> -->
+
+
   <div class="form-group">
-    <label for="exampleInputFile">Resume </label>
-    <input type="file" id="Resume">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                profiles_path, :class => 'btn btn-default' %>
+    </div>
   </div>
 
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+  <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+<!-- </form> -->
+<% end %>

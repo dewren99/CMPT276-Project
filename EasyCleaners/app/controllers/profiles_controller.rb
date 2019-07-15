@@ -28,7 +28,7 @@ class ProfilesController < ApplicationController
 
     respond_to do |format|
       if @profile.save
-        format.html { redirect_to @profile, notice: 'Proooofile was successfully created.' }
+        format.html { redirect_to @profile, notice: 'Profile was successfully created.' }
         format.json { render :show, status: :created, location: @profile }
       else
         format.html { render :new }
@@ -70,6 +70,6 @@ class ProfilesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def profile_params
-    params.require(:profile).permit(:info, :price)
+    params.require(:profile).permit(:first_name, :last_name, :burnaby, :richmond, :north_vancouver, :west_vancouver, :yale_town, :gas_town, :price)
   end
 end

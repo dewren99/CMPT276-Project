@@ -10,14 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_01_032100) do
+ActiveRecord::Schema.define(version: 2019_07_01_025923) do
 
   create_table "profiles", force: :cascade do |t|
-    t.text "info"
-    t.string "price"
+    t.integer "user_id"
+    t.string "last_name", limit: 20, default: "", null: false
+    t.string "first_name", limit: 20, default: "", null: false
+    t.boolean "burnaby", default: false
+    t.boolean "richmond", default: false
+    t.boolean "north_vancouver", default: false
+    t.boolean "west_vancouver", default: false
+    t.boolean "yale_town", default: false
+    t.boolean "gas_town", default: false
+    t.float "total_ratings", default: 0.0
+    t.integer "num_ratings", default: 0
+    t.float "price", default: 13.85
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
