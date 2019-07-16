@@ -17,23 +17,27 @@
 
 <!-- <form> -->
   <div class="form-group">
-    <%= f.label :first_name, :class => 'control-label' %>
+    <%= f.label :first_name, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-3">
     <%= f.text_field :first_name, :class => 'form-control' %>
+    </div>
     <!-- <label for="Name">First Name</label> -->
     <!-- <input type="name" class="form-control" id="Name" > -->
   </div>
 
   <div class="form-group">
-    <%= f.label :last_name, :class => 'control-label' %>
+    <%= f.label :last_name, :class => 'control-label col-lg-2' %>
+      <div class="col-lg-3">
     <%= f.text_field :last_name, :class => 'form-control' %>
+    </div>
     <!-- <label for="Last Name">Last Name</label> -->
     <!-- <input type="name" class="form-control" id="Last Name" > -->
   </div>
 
 
 
-  <div class="form-group">
-    <%= check_box_tag 'burnaby', 'burnaby', false %>
+  <div class="checkbox-group">
+    <%= check_box_tag 'burnaby', true, false %>
     <%= label_tag 'burnaby', 'Burnaby' %>
 <br>
 <%= check_box_tag 'richmond', true, false %>
@@ -69,8 +73,10 @@
 
 
 <div class="form-group">
-  <%= f.label :price, :class => 'control-label' %>
+  <%= f.label :price, :class => 'control-label col-lg-2' %>
+  <div class="col-lg-3">
     <%= f.text_field :price, :class => 'form-control' %>
+    </div>
 </div>
    <!-- <div class="form-group">
     <label for="Price">Price</label>
@@ -80,9 +86,11 @@
 
   <div class="form-group">
     <div class="col-lg-offset-2 col-lg-10">
+      <div class="col-lg-3">
       <%= f.submit nil, :class => 'btn btn-primary' %>
       <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                 profiles_path, :class => 'btn btn-default' %>
+                </div>
     </div>
   </div>
 

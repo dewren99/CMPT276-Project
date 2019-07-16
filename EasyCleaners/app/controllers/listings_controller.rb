@@ -1,25 +1,21 @@
+# frozen_string_literal: true
+
 class ListingsController < ApplicationController
-  def index #find cleaner
+  def index # find cleaner
+    @profiles = Profile.all
   end
 
-  def show  #detailed view (find cleaner)
-  end
+  def show; end
 
-  def new #post cleaner
-  end
+  def new; end
 
-  def create # process posting
-  end
+  def create; end
 
-  def edit  #edit posting
-  end
+  def edit; end
 
-  def update  #process edit
-  end
+  def update; end
 
-  def delete #delete posting
-  end
+  def delete; end
 
-  def destroy #process delete
-  end
+  def destroy; end
 end

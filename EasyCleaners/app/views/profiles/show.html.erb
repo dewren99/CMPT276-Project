@@ -1,3 +1,4 @@
+<%# view profile page  %>
 <%- model_class = Profile -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
@@ -26,8 +27,6 @@
   <dd><%= @profile.price %></dd>
 </dl>
 
-<%= link_to t('.back', :default => t("helpers.links.back")),
-              profiles_path, :class => 'btn btn-default'  %>
 <%= link_to t('.edit', :default => t("helpers.links.edit")),
               edit_profile_path(@profile), :class => 'btn btn-default' %>
 <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
