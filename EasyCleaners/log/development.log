@@ -1,0 +1,503 @@
+Started GET "/" for 127.0.0.1 at 2019-07-15 20:06:27 -0700
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0.rc1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0.rc1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (96.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20190701020850)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190701020850"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProfiles (20190701025923)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "profiles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "last_name" varchar(20) DEFAULT '' NOT NULL, "first_name" varchar(20) DEFAULT '' NOT NULL, "burnaby" boolean DEFAULT 0, "richmond" boolean DEFAULT 0, "north_vancouver" boolean DEFAULT 0, "west_vancouver" boolean DEFAULT 0, "yale_town" boolean DEFAULT 0, "gas_town" boolean DEFAULT 0, "total_ratings" float DEFAULT 0.0, "num_ratings" integer DEFAULT 0, "price" float DEFAULT 13.85, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190701025923"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-16 03:09:41.589788"], ["updated_at", "2019-07-16 03:09:41.589788"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-07-15 20:09:57 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 109)
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/d/OneDrive/dev/github/EasyCleaners/EasyCleaners/public/packs
+[Webpacker] /home/jinwookk/.rbenv/versions/2.6.3/bin/ruby: warning: shebang line ending with \r may cause problems
+
+  Rendered layouts/_header.html.erb (Duration: 2.2ms | Allocations: 522)
+  Rendered layouts/_flash.html.erb (Duration: 0.6ms | Allocations: 155)
+Completed 200 OK in 32261ms (Views: 32257.4ms | ActiveRecord: 0.0ms | Allocations: 1441671)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-15 20:10:32 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (Duration: 2.1ms | Allocations: 639)
+  Rendered /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2531.2ms | Allocations: 758231)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 128)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 2621ms (Views: 2605.2ms | ActiveRecord: 1.4ms | Allocations: 779159)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-15 20:10:36 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 210)
+  Rendered /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1947)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 128)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.0ms | Allocations: 16058)
+
+
+Started POST "/users" for ::1 at 2019-07-15 20:10:43 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"JBhEi+HGmQy5R0Xa4Es7ThrbjkaVguvLed6l4MxQ7sMLRQm5kAfhHRDbEVzpEyJqPldvwCSfP/YBR5gFTSg/ZQ==", "user"=>{"email"=>"wlsdnr9407@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wlsdnr9407@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 225)
+  Rendered /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 77)
+  Rendered /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1265)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 121)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+Completed 200 OK in 170ms (Views: 50.3ms | ActiveRecord: 0.7ms | Allocations: 24667)
+
+
+Started POST "/users" for ::1 at 2019-07-15 20:10:53 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"TruHLaGLKNae1Rm2K+1e3wjpuG7pa85SvCSAy6CAU49dfaH/aQA/f2sgHCGs/nIUdNMwK1Y6GM5l7DeybijrMA==", "user"=>{"email"=>"wlsdnr9407@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wlsdnr9407@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "wlsdnr9407@gmail.com"], ["encrypted_password", "$2a$11$vCV0LtKHYgmShT9/o7ZG/uA1tD3a/8GpMdzPUN/pxLdIB8V.TyJem"], ["created_at", "2019-07-16 03:10:53.592813"], ["updated_at", "2019-07-16 03:10:53.592813"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 129ms (ActiveRecord: 5.0ms | Allocations: 12135)
+
+
+Started GET "/" for ::1 at 2019-07-15 20:10:53 -0700
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:6
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (Duration: 78.9ms | Allocations: 8057)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 125ms (Views: 123.4ms | ActiveRecord: 1.3ms | Allocations: 20861)
+
+
+Started GET "/profiles/new" for ::1 at 2019-07-15 20:10:55 -0700
+Processing by ProfilesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:18:in `new'
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:18:in `new'
+  Rendering profiles/new.html.erb within layouts/application
+  Rendered profiles/_form.html.erb (Duration: 2.6ms | Allocations: 2257)
+  Rendered profiles/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3458)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 94)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 79ms (Views: 53.7ms | ActiveRecord: 1.7ms | Allocations: 28788)
+
+
+Started POST "/profiles" for ::1 at 2019-07-15 20:11:01 -0700
+Processing by ProfilesController#create as HTML
+  Parameters: {"authenticity_token"=>"+MiZj+YhCgQ+PDoxLZ6G3HfhXM7eB8AuoChGH91sBBgpKuGW4Me3icazOAu1hoUUtJbnLeuNGRivSw4CPsxO6Q==", "profile"=>{"first_name"=>"Jinwook", "last_name"=>"Kim", "price"=>"13.85"}, "burnaby"=>"burnaby", "commit"=>"Create Profile"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:27:in `create'
+  [1m[36mProfile Load (0.4ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:27:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/profiles_controller.rb:30:in `block in create'
+  [1m[36mProfile Create (1.9ms)[0m  [1m[32mINSERT INTO "profiles" ("user_id", "last_name", "first_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["last_name", "Kim"], ["first_name", "Jinwook"], ["created_at", "2019-07-16 03:11:01.506458"], ["updated_at", "2019-07-16 03:11:01.506458"]]
+  ↳ app/controllers/profiles_controller.rb:30:in `block in create'
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/profiles_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/profiles/1
+Completed 302 Found in 15ms (ActiveRecord: 5.5ms | Allocations: 7032)
+
+
+Started GET "/profiles/1" for ::1 at 2019-07-15 20:11:01 -0700
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProfile Load (0.4ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:68:in `set_profile'
+  Rendering profiles/show.html.erb within layouts/application
+  Rendered profiles/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1822)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:6
+  [1m[36mProfile Load (0.5ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (Duration: 4.1ms | Allocations: 1837)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 1.2ms | Allocations: 17461)
+
+
+Started GET "/" for ::1 at 2019-07-15 20:11:06 -0700
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:6
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (Duration: 3.9ms | Allocations: 1868)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.6ms | Allocations: 14676)
+
+
+Started GET "/profiles/1" for ::1 at 2019-07-15 20:11:09 -0700
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProfile Load (0.4ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:68:in `set_profile'
+  Rendering profiles/show.html.erb within layouts/application
+  Rendered profiles/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1184)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:6
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (Duration: 3.9ms | Allocations: 1832)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+Completed 200 OK in 60ms (Views: 56.8ms | ActiveRecord: 1.0ms | Allocations: 16469)
+
+
+Started GET "/profiles/1/edit" for ::1 at 2019-07-15 20:11:15 -0700
+Processing by ProfilesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:68:in `set_profile'
+  Rendering profiles/edit.html.erb within layouts/application
+  Rendered profiles/_form.html.erb (Duration: 1.3ms | Allocations: 1387)
+  Rendered profiles/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2543)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:6
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (Duration: 4.0ms | Allocations: 1836)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 64ms (Views: 60.4ms | ActiveRecord: 1.0ms | Allocations: 17834)
+
+
+Started PATCH "/profiles/1" for ::1 at 2019-07-15 20:11:18 -0700
+Processing by ProfilesController#update as HTML
+  Parameters: {"authenticity_token"=>"wXoq4PdvBS+GBxRUG754P9Yrp3YqKxZCdSu/QDQbcGHA9f6iMbTYVgTmUH8GPaEy99KQNzdr1AXy+irJPvO3dA==", "profile"=>{"first_name"=>"Jinwook", "last_name"=>"Kim", "price"=>"13.85"}, "burnaby"=>"burnaby", "richmond"=>"true", "commit"=>"Update Profile", "id"=>"1"}
+  [1m[36mProfile Load (0.5ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:68:in `set_profile'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/profiles_controller.rb:44:in `block in update'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:44:in `block in update'
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/profiles_controller.rb:44:in `block in update'
+Redirected to http://localhost:3000/profiles/1
+Completed 302 Found in 9ms (ActiveRecord: 1.1ms | Allocations: 4257)
+
+
+Started GET "/profiles/1" for ::1 at 2019-07-15 20:11:18 -0700
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:68:in `set_profile'
+  Rendering profiles/show.html.erb within layouts/application
+  Rendered profiles/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1185)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:6
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (Duration: 3.7ms | Allocations: 1832)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 50ms (Views: 47.5ms | ActiveRecord: 0.9ms | Allocations: 16409)
+
+
+Started GET "/" for ::1 at 2019-07-15 20:13:12 -0700
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:6
+  [1m[36mProfile Load (0.4ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (Duration: 4.3ms | Allocations: 1864)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+Completed 200 OK in 55ms (Views: 53.3ms | ActiveRecord: 0.7ms | Allocations: 14594)
+
+
+Started GET "/profiles/1" for ::1 at 2019-07-15 20:13:14 -0700
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProfile Load (0.4ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:68:in `set_profile'
+  Rendering profiles/show.html.erb within layouts/application
+  Rendered profiles/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1184)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:6
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (Duration: 3.6ms | Allocations: 1832)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+Completed 200 OK in 59ms (Views: 55.6ms | ActiveRecord: 1.0ms | Allocations: 16497)
+
+
+Started DELETE "/profiles/1" for ::1 at 2019-07-15 21:31:12 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProfilesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tNHKODNOT0FJ9QENbFZNe3xsXWnNHrS3n67sKdI2FlWnF+zq+8VY6LwABJrrRWGwAFbVLHJPYitGZltQHJ6u6g==", "id"=>"1"}
+  [1m[36mProfile Load (0.5ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:68:in `set_profile'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/profiles_controller.rb:57:in `destroy'
+  [1m[36mProfile Destroy (4.2ms)[0m  [1m[31mDELETE FROM "profiles" WHERE "profiles"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/profiles_controller.rb:57:in `destroy'
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/profiles_controller.rb:57:in `destroy'
+Redirected to http://localhost:3000/profiles
+Completed 302 Found in 15ms (ActiveRecord: 7.9ms | Allocations: 5612)
+
+
+Started GET "/profiles" for ::1 at 2019-07-15 21:31:12 -0700
+Processing by ProfilesController#index as HTML
+  Rendering profiles/index.html.erb within layouts/application
+  [1m[36mProfile Load (0.4ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+  ↳ app/views/profiles/index.html.erb:23
+  Rendered profiles/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2279)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:6
+  [1m[36mProfile Load (0.5ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (Duration: 5.0ms | Allocations: 1884)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 57ms (Views: 54.8ms | ActiveRecord: 1.3ms | Allocations: 17096)
+
+
+Started GET "/profiles/new" for ::1 at 2019-07-15 21:31:15 -0700
+Processing by ProfilesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:18:in `new'
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:18:in `new'
+  Rendering profiles/new.html.erb within layouts/application
+  Rendered profiles/_form.html.erb (Duration: 1.2ms | Allocations: 1326)
+  Rendered profiles/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2335)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 96ms (Views: 92.3ms | ActiveRecord: 0.7ms | Allocations: 18449)
+
+
+Started POST "/profiles" for ::1 at 2019-07-15 21:31:21 -0700
+Processing by ProfilesController#create as HTML
+  Parameters: {"authenticity_token"=>"t3+qBZv1ERxK+8hflD7WQUPSqoeETRr83LGyoAb8PZ5mndIcnROskbJ0ymUMJtWJgKURZLHHw8rT0vq95Vx3bw==", "profile"=>{"first_name"=>"Jinwook", "last_name"=>"Kim", "price"=>"13.85"}, "burnaby"=>"burnaby", "richmond"=>"true", "north_vancouver"=>"true", "commit"=>"Create Profile"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:27:in `create'
+  [1m[36mProfile Load (0.4ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:27:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/profiles_controller.rb:30:in `block in create'
+  [1m[36mProfile Create (1.7ms)[0m  [1m[32mINSERT INTO "profiles" ("user_id", "last_name", "first_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["last_name", "Kim"], ["first_name", "Jinwook"], ["created_at", "2019-07-16 04:31:21.884825"], ["updated_at", "2019-07-16 04:31:21.884825"]]
+  ↳ app/controllers/profiles_controller.rb:30:in `block in create'
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/profiles_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/profiles/2
+Completed 302 Found in 17ms (ActiveRecord: 5.7ms | Allocations: 6907)
+
+
+Started GET "/profiles/2" for ::1 at 2019-07-15 21:31:21 -0700
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfile Load (0.4ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:68:in `set_profile'
+  Rendering profiles/show.html.erb within layouts/application
+  Rendered profiles/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1186)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:6
+  [1m[36mProfile Load (0.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (Duration: 3.5ms | Allocations: 1834)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 29)
+Completed 200 OK in 99ms (Views: 96.3ms | ActiveRecord: 0.9ms | Allocations: 18189)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started DELETE "/users/sign_out" for ::1 at 2019-07-15 21:34:45 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sEF8oT4cZjbw72feW/PRMVwopBSvQF6Jt5AYIpjt8Mmjh1pz9pdxnwUaYknc4P36IBIsURARiBVuWK9bVkVIdg=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (ActiveRecord: 0.7ms | Allocations: 5942)
+
+
+Started GET "/" for ::1 at 2019-07-15 21:34:45 -0700
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 178)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 127ms (Views: 126.0ms | ActiveRecord: 0.0ms | Allocations: 15501)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-15 21:34:46 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 132)
+  Rendered /home/jinwookk/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1049)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | Allocations: 19)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.0ms | Allocations: 14301)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-07-15 21:34:49 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"uIYZfBYbkR5IRRsWRNjtRuVkKmU4bKcYLNkSP+FmyT32FZX+ausp4B8Q3ArM1A5vXxGF7A3pOlya2C5X4HRv0g==", "user"=>{"email"=>"wlsdnr9407@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "wlsdnr9407@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 121ms (ActiveRecord: 0.8ms | Allocations: 4465)
+
+
+Started GET "/" for ::1 at 2019-07-15 21:34:50 -0700
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:6
+  [1m[36mProfile Load (0.6ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (Duration: 6.4ms | Allocations: 1857)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 28)
+Completed 200 OK in 106ms (Views: 104.7ms | ActiveRecord: 0.9ms | Allocations: 15408)
+
+
+Started GET "/profiles/2" for ::1 at 2019-07-15 21:34:51 -0700
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfile Load (0.5ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/profiles_controller.rb:68:in `set_profile'
+  Rendering profiles/show.html.erb within layouts/application
+  Rendered profiles/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1184)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:6
+  [1m[36mProfile Load (0.4ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (Duration: 4.9ms | Allocations: 1832)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 19)
+Completed 200 OK in 63ms (Views: 59.7ms | ActiveRecord: 1.3ms | Allocations: 16484)
+
+
