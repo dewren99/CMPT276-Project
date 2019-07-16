@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :listings do
+    member do
+      get :delete
+    end
+  end
   resources :profiles
   devise_for :users
   root 'welcome#index'
